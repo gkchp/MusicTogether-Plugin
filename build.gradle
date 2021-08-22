@@ -8,9 +8,19 @@ version = pluginVersion
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
+    compileClasspath 'io.netty:netty-buffer:4.1.67.Final'
     compileOnly 'org.spongepowered:spongeapi:7.1.0'
     annotationProcessor 'org.spongepowered:spongeapi:7.1.0'
 }
 
 sponge.plugin.id = pluginId
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+

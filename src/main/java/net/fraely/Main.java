@@ -24,7 +24,8 @@ import java.nio.charset.StandardCharsets;
 @Plugin(
         id = "togethermusic",
         name = "TogetherMusic",
-        version = "1.0.1"
+        version = "1.0.1",
+        description = "An music plugin"
 )
 public class Main {
 
